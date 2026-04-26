@@ -22,17 +22,33 @@ public class Book {
         updateStatus();
     }
 
-    public String getTitle() { return title; }
-    public String getAuthor() { return author; }
-    public String getIsbn() { return isbn; }
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
 
     public int getYear() {
         return year;
     }
 
-    public int getAvailableQuantity() { return availableQuantity; }
-    public int getTotalQuantity() { return totalQuantity; }
-    public BookStatus getStatus() { return status; }
+    public int getAvailableQuantity() {
+        return availableQuantity;
+    }
+
+    public int getTotalQuantity() {
+        return totalQuantity;
+    }
+
+    public BookStatus getStatus() {
+        return status;
+    }
 
     public void setTitle(String title) {
         this.title = title;
@@ -42,7 +58,7 @@ public class Book {
         this.author = author;
     }
 
-    // ✅ central place to maintain consistency
+    // central place to maintain consistency
     private void updateStatus() {
         if (availableQuantity == 0) {
             status = BookStatus.OUT_OF_STOCK;

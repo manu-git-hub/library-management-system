@@ -45,8 +45,8 @@ Because keeping track of how all these pieces communicate is important, here is 
    - The `NotificationService` acts as a utility to alert patrons when a `Reservation` is resolved.
    - The `EntityFactory` sits independently, strictly feeding newly created `Book` and `Patron` objects into the flow when the `LibraryService` requests them.
 
-### Automated UML Class Diagram
-*(If your markdown viewer supports Mermaid, the flowchart of the above relationships will automatically render below):*
+### UML Class Diagram
+
 
 ```mermaid
 classDiagram
