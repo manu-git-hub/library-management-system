@@ -1,4 +1,4 @@
 package com.java.library.service;
 
-public class DefaultBookService {
+public class BookService {
 }
