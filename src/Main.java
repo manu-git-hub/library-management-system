@@ -21,9 +21,16 @@ public class Main {
 
             try {
 
-                System.out.println("\n1.Add Branch  2.Add Book  3.Add User");
-                System.out.println("4.Search  5.Checkout  6.Return");
-                System.out.println("7.Transfer  8.Recommend  9.Exit");
+                System.out.println("\n" + "=".repeat(46));
+                System.out.println("          LIBRARY MANAGEMENT SYSTEM");
+                System.out.println("=".repeat(46));
+                System.out.println("  [1] Add Branch         [6] Return Book");
+                System.out.println("  [2] Add Book           [7] Transfer Book");
+                System.out.println("  [3] Add User           [8] Recommend Books");
+                System.out.println("  [4] Search Books       [9] Exit");
+                System.out.println("  [5] Checkout");
+                System.out.println("-".repeat(46));
+                System.out.print("  Enter choice: ");
 
                 int choice = sc.nextInt();
                 sc.nextLine();
@@ -144,9 +151,9 @@ public class Main {
                 }
             }
 
-            catch (Exception e) {
-                System.out.println("Invalid input! Please enter correct data type.");
-                sc.nextLine();
+            catch (java.util.InputMismatchException e) {
+                System.out.println("\n[!] Invalid input. Please enter the correct data type (e.g. number where requested).");
+                sc.nextLine(); // flush scanner
             }
         }
     }
