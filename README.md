@@ -133,3 +133,10 @@ classDiagram
 1. Ensure you have the Java JDK installed.
 2. Navigate into the `src/` directory.
 3. Simply execute `Main.java`. A terminal-based user interface will guide you through adding branches, books, and testing out the real-time checkouts and reservations!
+
+---
+
+## Overview of the Project
+This **Library Management System** serves as a complete demonstration of Low-Level Design (LLD) proficiency. By mapping real-world library operations (managing patrons, checking out books, processing returns, and handling multi-branch transfers) into pure Java Object-Oriented structures, the project effectively showcases how to build scalable and maintainable enterprise software. 
+
+The primary goal was to move beyond simply making the code "work," and instead focus heavily on *how* it was structured. By strictly adhering to **SOLID principles** and deeply integrating industry-standard **Design Patterns** (Strategy and Factory), this project proves the capacity to design complex data relationships and loosely coupled components that can be safely expanded upon in the future without breaking existing application flows.
